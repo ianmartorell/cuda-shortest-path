@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="error.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="help.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="lock.cuh">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.cuh">
+      <Filter>header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source files">
+      <UniqueIdentifier>{ca61cbb7-774a-40f5-ada4-c047df532e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files">
+      <UniqueIdentifier>{90cebf9d-e000-4af0-a30c-bca200363911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="io.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="csr_bellman.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="delta_stepping.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="bellman_ford.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="dijkstra.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ell_bellman.cu">
+      <Filter>source files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="help.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="io.cuh">
+      <Filter>header files</Filter>
+    </None>
+    <None Include="dijkstra.cuh">
+      <Filter>header files</Filter>
+    </None>
+    <None Include="bellman_ford.cuh">
+      <Filter>header files</Filter>
+    </None>
+    <None Include="delta_stepping.cuh">
+      <Filter>header files</Filter>
+    </None>
+    <None Include="csr_bellman.cuh">
+      <Filter>header files</Filter>
+    </None>
+    <None Include="ell_bellman.cuh">
+      <Filter>header files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

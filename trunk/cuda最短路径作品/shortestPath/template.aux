@@ -1,0 +1,133 @@
+\relax 
+\bibstyle{plain}
+\@writefile{toc}{\contentsline {section}{\numberline {1}简介}{1}}
+\citation{paper:shortest-survey}
+\citation{web:dijkstra}
+\citation{CLRS}
+\citation{paper:dijkstra}
+\citation{web:bellman}
+\citation{CLRS}
+\citation{paper:bellman}
+\citation{web:astar}
+\citation{AI}
+\citation{web:astar-stanford}
+\citation{paper:min-max}
+\citation{paper:pairing-heap}
+\citation{paper:fibonacci}
+\citation{paper:heuristic-bellman}
+\citation{paper:bellman-improved}
+\citation{paper:crauser}
+\citation{paper:eager}
+\citation{paper:delta-stepping}
+\citation{paper:delta-stepping-madduri}
+\citation{paper:delta-stepping-gpu}
+\citation{web:delta-stepping-gpu-code}
+\@writefile{toc}{\contentsline {section}{\numberline {2}相关工作}{2}}
+\citation{paper:dijkstra}
+\@writefile{toc}{\contentsline {section}{\numberline {3}CUDA Dijktra}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dijkstra算法}{3}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces CUDA Dijkstra}}{3}}
+\newlabel{alg:dijkstra}{{1}{3}}
+\citation{CUDA-by-example}
+\citation{web:reduction}
+\citation{paper:min-max}
+\citation{paper:pairing-heap}
+\citation{paper:fibonacci}
+\citation{web:reduction}
+\citation{web:thrust}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Reduction}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces ExtractMin Time(ns)。数据规模从1到$10^7$，进行1000次ExtractMin操作取平均值。}}{4}}
+\newlabel{table:reduction_loop_heap}{{1}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}CUDA Bellman-Ford}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Bellman-Ford算法}{5}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces CUDA Bellman-Ford}}{5}}
+\newlabel{alg:bellman-ford}{{2}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}循环队列}{5}}
+\citation{paper:lll-slf}
+\citation{paper:delta-stepping}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Large Label Last和Small Label First优化}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}CUDA $\Delta $-Stepping}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}$\Delta $-Stepping算法}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Initial}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Add To Request}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces CUDA $\Delta $-Stepping}}{7}}
+\newlabel{alg:delta-stepping}{{3}{7}}
+\citation{web:prefix-sum}
+\citation{paper:delta-stepping}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Relax}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Bucket的数据结构}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}$\Delta $的选择}{8}}
+\citation{paper:bell}
+\citation{paper:sparse-matrix}
+\citation{paper:bell}
+\@writefile{toc}{\contentsline {section}{\numberline {6}CUDA Sparse Matrix-Vector Bellman-Ford}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Sparse Matrix-Vector简介}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}CSR Bellman-Ford算法}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 有向图邻接矩阵$C$ }}{9}}
+\newlabel{fig:csr_a}{{1}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 邻接矩阵$C$的CSR表示 }}{9}}
+\newlabel{fig:csr_b}{{2}{9}}
+\newlabel{fig:csr}{{6.2}{9}}
+\citation{web:database}
+\newlabel{lst:relax_csr_scalar}{{1}{10}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}CSR Scalar Bellman-Ford Relax}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}ELL Bellman-Ford算法}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}实验}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}实验设置}{10}}
+\newlabel{lst:relax_csr_vector}{{2}{11}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}CSR Vector Bellman-Ford Relax}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 存储数据向量$C_v$ }}{12}}
+\newlabel{fig:ell_cv}{{3}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 列索引向量$C_j$ }}{12}}
+\newlabel{fig:ell_cj}{{4}{12}}
+\newlabel{lst:relax_ell}{{3}{12}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}Ell Bellman-Ford Relax}{12}}
+\citation{web:boost_dijkstra}
+\citation{web:boost}
+\citation{web:boost_bellman}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Distance Graph参数统计}}{13}}
+\newlabel{table:gr}{{2}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 测试环境}}{13}}
+\newlabel{table:test_platform}{{3}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}性能分析}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Boost Algorithms Compute Time(secs)，计算源点$V_1$到其余节点的时间。算法均开启-O2优化。}}{14}}
+\newlabel{table:time_cpu}{{4}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces CUDA Algorithms Compute Time(secs)，计算源点$V_1$到其余节点的时间。算法均开启-O2优化。}}{15}}
+\newlabel{table:time_gpu}{{5}{15}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Boost V.S. CUDA Algorithms Compute Time(secs)}}{15}}
+\newlabel{table:time_cpuvsgpu}{{6}{15}}
+\bibcite{web:dijkstra}{1}
+\bibcite{web:boost_dijkstra}{2}
+\bibcite{web:boost}{3}
+\bibcite{web:boost_bellman}{4}
+\bibcite{web:bellman}{5}
+\bibcite{web:astar}{6}
+\bibcite{web:astar-stanford}{7}
+\bibcite{web:delta-stepping-gpu-code}{8}
+\bibcite{web:database}{9}
+\bibcite{web:reduction}{10}
+\bibcite{web:thrust}{11}
+\bibcite{web:prefix-sum}{12}
+\bibcite{CUDA-by-example}{13}
+\bibcite{CLRS}{14}
+\bibcite{AI}{15}
+\bibcite{book}{16}
+\bibcite{paper:delta-stepping}{17}
+\bibcite{paper:min-max}{18}
+\bibcite{paper:dijkstra}{19}
+\bibcite{paper:pairing-heap}{20}
+\@writefile{toc}{\contentsline {section}{\numberline {8}总结}{16}}
+\bibcite{paper:fibonacci}{21}
+\bibcite{paper:sparse}{22}
+\bibcite{paper:bellman}{23}
+\bibcite{paper:heuristic-bellman}{24}
+\bibcite{paper:bellman-improved}{25}
+\bibcite{paper:lll-slf}{26}
+\bibcite{paper:delta-stepping-gpu}{27}
+\bibcite{paper:boost-shortest}{28}
+\bibcite{paper:delta-stepping-madduri}{29}
+\bibcite{paper:crauser}{30}
+\bibcite{paper:eager}{31}
+\bibcite{paper:shortest-survey}{32}
+\bibcite{paper:sparse-matrix}{33}
+\bibcite{paper:bell}{34}

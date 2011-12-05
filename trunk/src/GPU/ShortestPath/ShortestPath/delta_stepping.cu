@@ -41,9 +41,9 @@ void test_delta_stepping_dijkstra(int source, int target, string filename, bool 
 
     int delta;
 
-    //delta = MeanDelta();
+    delta = MeanDelta();
     //delta = MidDelta();
-    delta = EdgeDegreeDelta(); //EdgeDegreeDelta is more effective
+    //delta = EdgeDegreeDelta(); //EdgeDegreeDelta is more effective
 
     cout << "Doing ShortestPath Algorithm..." << endl;
 

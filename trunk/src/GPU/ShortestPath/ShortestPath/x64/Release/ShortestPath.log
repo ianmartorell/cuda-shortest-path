@@ -1,0 +1,88 @@
+﻿生成启动时间为 2011/12/5 15:59:42。
+     1>项目“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ShortestPath.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“x64\Release\ShortestPath.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" 
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompileDeps:
+       正在跳过目标“AddCudaCompileDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       AddCudaCompilePropsDeps:
+       正在跳过目标“AddCudaCompilePropsDeps”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+         Compiling CUDA source file delta_stepping.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\68783801cbf3414c8ae99bbbb4226625.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" 
+         delta_stepping.cu
+         tmpxft_00000aa8_00000000-0_delta_stepping.cudafe1.gpu
+         tmpxft_00000aa8_00000000-5_delta_stepping.cudafe2.gpu
+         delta_stepping.cu
+         tmpxft_00000aa8_00000000-0_delta_stepping.cudafe1.cpp
+         tmpxft_00000aa8_00000000-11_delta_stepping.ii
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       CudaBuild:
+       正在跳过目标“CudaBuild”，因为所有输出文件相对于输入文件而言都是最新的。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\ShortestPath.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.lib" /MACHINE:X64 x64\Release\bellman_ford.cu.obj
+         x64\Release\csr_bellman.cu.obj
+         x64\Release\delta_stepping.cu.obj
+         x64\Release\dijkstra.cu.obj
+         x64\Release\ell_bellman.cu.obj
+         x64\Release\io.cu.obj
+         x64\Release\kernel.cu.obj
+         x64\Release\help.obj
+         正在生成代码
+         已完成代码的生成
+         ShortestPath.vcxproj -> D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe;#1" /manifest x64\Release\ShortestPath.exe.intermediate.manifest
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart32_40_17.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart64_40_17.dll
+         已复制         2 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“x64\Release\ShortestPath.unsuccessfulbuild”。
+         正在对“x64\Release\ShortestPath.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ShortestPath.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:13.36

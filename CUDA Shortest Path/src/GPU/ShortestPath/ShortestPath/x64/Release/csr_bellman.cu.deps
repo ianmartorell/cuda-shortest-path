@@ -1,0 +1,734 @@
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_config.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\limits.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stddef.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\channel_descriptor.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\device_launch_parameters.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\vector_types.h
+d:\code\cuda shortest path\src\gpu\shortestpath\shortestpath\csr_bellman.cuh
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\istream
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ostream
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ios
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\climits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\yvals.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\use_ansi.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cmath
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\math.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdlib
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xiosbase
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\exception
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstddef
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\eh.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\malloc.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstring
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\new
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\wchar.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\wtime.inl
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdbg.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\type_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\limits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ymath.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\float.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtwrn.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xtr1common
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxtype_traits
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\typeinfo
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ctype.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\locale.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xdebug
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\system_error
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\errno.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\share.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_vector.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/config.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/simple_defines.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/compiler.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/device_backend.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/host_device.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\host_defines.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/config/debug.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_malloc_allocator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_ptr.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/iterator_categories.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\iterator
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/universal_categories.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/backend_iterator_categories.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/has_trivial_assign.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_ptr_traits.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_ptr.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_reference.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/iterator_traits.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/any_space_tag.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/backend_iterator_spaces.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/iterator_traits.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/iterator_category_to_traversal.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/iterator_category_to_space.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/device_iterator_category_to_backend_space.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_reference.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/copy.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/dispatch/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/detail/general_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/detail/trivial_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/is_trivial_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/dispatch/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/minimum_category.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/minimum_type.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_device_to_device.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_device_to_device.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/distance.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/distance.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/distance.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dereference.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_host_or_any_to_device.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_host_or_any_to_device.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/static_assert.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_device_to_host_or_any.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/copy_device_to_host_or_any.inl
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\setjmp.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\immintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\wmmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\nmmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\smmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\tmmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\pmmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\emmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xmmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\mmintrin.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxshared
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/dispatch/copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/minimum_space.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/copy_cross_space.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/raw_buffer.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/internal_allocator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_malloc.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_malloc.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/malloc.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/malloc.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/malloc.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/malloc.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime_api.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/no_throw_free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/no_throw_free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/no_throw_free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/device_free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_free.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/free.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\iostream
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/free.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime_api.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system_error.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/error_code.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/errno.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/error_category.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/functional.h
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\functional
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfunctional
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxresult
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallobj
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxpmfcaller
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallpmf
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallfun
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xawrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxcallwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxrefwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxmem_fn
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxfunction
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xawrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind0
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xfwrap1
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xxbind1
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/functional.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/error_code.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/error_condition.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/system_error.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/system_error.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/cuda_error.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\driver_types.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/system/detail/cuda_error.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime_api.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/no_throw_free.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/no_throw_free.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime_api.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/normal_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/iterator_adaptor.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/iterator_facade.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/iterator_facade.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/is_iterator_category.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/distance_from_result.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/iterator_adaptor.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/contiguous_storage.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/contiguous_storage.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/swap.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/swap.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/swap_ranges.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/tuple.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/tuple.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/pair.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/pair.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/zip_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/zip_iterator_base.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/tuple_meta_transform.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/tuple_transform.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/zip_iterator.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/internal_functional.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/for_each.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/for_each.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/for_each.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/for_each.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/detail/launch_closure.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/detail/launch_closure.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/for_each.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/for_each.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/raw_buffer.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/trivial_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/trivial_copy.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/trivial_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime_api.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/copy_device_to_device.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/transform.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/transform.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/trivial_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/copy_if.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/copy_if.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/scan.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/scan.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/scan.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\cuda\scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/dispatch/scan.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/detail/fast_scan.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\cuda\detail\fast_scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/detail/safe_scan.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\cuda\detail\safe_scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/scan.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\omp\scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/scan_by_key.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\generic\scan_by_key.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/replace.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/replace.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/scatter.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/scatter.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/permutation_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/permutation_iterator_base.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/permutation_iterator.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/copy_if.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/copy_if.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/vector_base.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/reverse_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/reverse_iterator_base.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/reverse_iterator.inl
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vector
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/vector_base.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/move.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/equal.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/equal.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/mismatch.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/mismatch.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/find.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/find.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/find.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/find.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/find.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/find.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/find.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/omp/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/arch.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/arch.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/block/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/extern_shared_ptr.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/dispatch/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/dispatch/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/transform_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/transform_iterator.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/reduce_by_key.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\generic\reduce_by_key.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/iterator/is_output_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/is_metafunction_defined.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/has_nested_type.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/function_traits.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/extrema.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/extrema.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/extrema.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/extrema.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/extrema.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/extrema.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\generic\extrema.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/counting_iterator.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/iterator/detail/counting_iterator.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/numeric_traits.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/inner_product.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/inner_product.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/transform_reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/transform_reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/reduce.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/reduce.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/type_traits/algorithm/intermediate_type_from_function_and_iterators.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/uninitialized_fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/uninitialized_fill.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/uninitialized_fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/fill.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/fill.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/cuda/fill.h
+c:\program files\nvidia gpu computing toolkit\cuda\v4.0\include\thrust\detail\device\cuda\fill.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/util/align.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/cstdint.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/generate.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/generate.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/generic/fill.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/uninitialized_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/uninitialized_copy.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/uninitialized_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/uninitialized_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device/dispatch/uninitialized_copy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/advance.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/advance.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/advance.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/destroy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/destroy.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/device_vector.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/host_vector.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host_vector.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/scan.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/scan.inl
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/dispatch/scan.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\thrust/detail/host/scan.h
+d:\code\cuda shortest path\src\gpu\shortestpath\shortestpath\io.cuh
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\list
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\fstream
+d:\code\cuda shortest path\src\gpu\shortestpath\shortestpath\error.h
+d:\code\cuda shortest path\src\gpu\shortestpath\shortestpath\help.h
+d:\code\cuda shortest path\src\gpu\shortestpath\shortestpath\timer.cuh
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\cuda_runtime.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include\device_launch_parameters.h

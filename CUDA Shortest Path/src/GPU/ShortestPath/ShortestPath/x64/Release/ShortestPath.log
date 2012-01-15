@@ -1,0 +1,361 @@
+﻿生成启动时间为 2011/12/4 10:23:05。
+     1>项目“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ShortestPath.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\f8498d91db894c02a2ce1466e79f7156.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\a652d5519ec14ae7924768eb9e2308ae.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\a09443144a0a4cbebabb27d80eb065c9.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\4ac306db508f4140871f170779ac6527.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\650d3a30004f488fac711203ab5f56d7.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\6d250cd4e6d94333bf2bc87465bc2468.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" -clean 
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\9ccce994b4ff4cf9925885f173061361.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" -clean 
+       PrepareForBuild:
+         正在创建目录“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\”。
+       InitializeBuildStatus:
+         正在创建“x64\Release\ShortestPath.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" 
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       AddCudaCompilePropsDeps:
+         已找到“CudaToolkitCustomDir”。
+         已找到“AdditionalDeps”。
+         已找到“CompileOut”。
+         已找到“Include”。
+         已找到“Keep”。
+         已找到“KeepDir”。
+         已找到“NvccCompilation”。
+         已找到“NvccPath”。
+         已找到“RequiredIncludes”。
+         已找到“TargetMachinePlatform”。
+         已找到“CInterleavedPTX”。
+         已找到“CodeGeneration”。
+         已找到“GPUDebugInfo”。
+         已找到“MaxRegCount”。
+         已找到“PtxAsOptionV”。
+         已找到“Defines”。
+         已找到“Emulation”。
+         已找到“HostDebugInfo”。
+         已找到“FastMath”。
+         已找到“Optimization”。
+         已找到“Runtime”。
+         已找到“RuntimeChecks”。
+         已找到“TypeInfo”。
+         已找到“Warning”。
+         已找到“AdditionalOptions”。
+         已找到“CommandLineTemplate”。
+       CudaBuild:
+         Compiling CUDA source file bellman_ford.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\5ff9ed245a9848bfa8a8fd2f21587cb8.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" 
+         bellman_ford.cu
+         tmpxft_00001bc0_00000000-0_bellman_ford.cudafe1.gpu
+         tmpxft_00001bc0_00000000-5_bellman_ford.cudafe2.gpu
+         bellman_ford.cu
+         tmpxft_00001bc0_00000000-0_bellman_ford.cudafe1.cpp
+         tmpxft_00001bc0_00000000-11_bellman_ford.ii
+       CudaBuild:
+         Compiling CUDA source file csr_bellman.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\94691fa5319346a39e0799d310eefcf0.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" 
+         csr_bellman.cu
+         tmpxft_00001ce8_00000000-0_csr_bellman.cudafe1.gpu
+         tmpxft_00001ce8_00000000-5_csr_bellman.cudafe2.gpu
+         csr_bellman.cu
+         tmpxft_00001ce8_00000000-0_csr_bellman.cudafe1.cpp
+         tmpxft_00001ce8_00000000-11_csr_bellman.ii
+       CudaBuild:
+         Compiling CUDA source file delta_stepping.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\5a2e67e999644dda8cb8a03d0b6e69ba.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" 
+         delta_stepping.cu
+         tmpxft_00002d24_00000000-0_delta_stepping.cudafe1.gpu
+         tmpxft_00002d24_00000000-5_delta_stepping.cudafe2.gpu
+         delta_stepping.cu
+         tmpxft_00002d24_00000000-0_delta_stepping.cudafe1.cpp
+         tmpxft_00002d24_00000000-11_delta_stepping.ii
+       CudaBuild:
+         Compiling CUDA source file dijkstra.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\acce723d772f48a799b6ada67e2f3f9d.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" 
+         dijkstra.cu
+         tmpxft_000029c0_00000000-0_dijkstra.cudafe1.gpu
+         tmpxft_000029c0_00000000-5_dijkstra.cudafe2.gpu
+         dijkstra.cu
+         tmpxft_000029c0_00000000-0_dijkstra.cudafe1.cpp
+         tmpxft_000029c0_00000000-11_dijkstra.ii
+       CudaBuild:
+         Compiling CUDA source file ell_bellman.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\5c7f4568798b4c37a8825c237e15c399.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" 
+         ell_bellman.cu
+         tmpxft_00002ef4_00000000-0_ell_bellman.cudafe1.gpu
+         tmpxft_00002ef4_00000000-5_ell_bellman.cudafe2.gpu
+         ell_bellman.cu
+         tmpxft_00002ef4_00000000-0_ell_bellman.cudafe1.cpp
+         tmpxft_00002ef4_00000000-11_ell_bellman.ii
+       CudaBuild:
+         Compiling CUDA source file io.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\eec591bf0c124f83b8f27fec7917ae20.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" 
+         io.cu
+         tmpxft_000004dc_00000000-0_io.cudafe1.gpu
+         tmpxft_000004dc_00000000-5_io.cudafe2.gpu
+         io.cu
+         tmpxft_000004dc_00000000-0_io.cudafe1.cpp
+         tmpxft_000004dc_00000000-11_io.ii
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\de813bdf12a04026bc2ba0007d073ca4.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu"
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_12,code=\"sm_12,compute_12\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"    --keep-dir "x64\Release"   --machine 64 --compile      -Xcompiler "/EHsc /nologo /O2 /Zi  /MD " -o "x64\Release\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" 
+         kernel.cu
+         tmpxft_00002ef8_00000000-0_kernel.cudafe1.gpu
+         tmpxft_00002ef8_00000000-5_kernel.cudafe2.gpu
+         kernel.cu
+         tmpxft_00002ef8_00000000-0_kernel.cudafe1.cpp
+         tmpxft_00002ef8_00000000-11_kernel.ii
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt help.cpp
+         help.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\ShortestPath.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.lib" /MACHINE:X64 x64\Release\bellman_ford.cu.obj
+         x64\Release\csr_bellman.cu.obj
+         x64\Release\delta_stepping.cu.obj
+         x64\Release\dijkstra.cu.obj
+         x64\Release\ell_bellman.cu.obj
+         x64\Release\io.cu.obj
+         x64\Release\kernel.cu.obj
+         x64\Release\help.obj
+         正在生成代码
+         已完成代码的生成
+         ShortestPath.vcxproj -> D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\ShortestPath.exe;#1" /manifest x64\Release\ShortestPath.exe.intermediate.manifest
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\x64\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart32_40_17.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart64_40_17.dll
+         已复制         2 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“x64\Release\ShortestPath.unsuccessfulbuild”。
+         正在对“x64\Release\ShortestPath.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ShortestPath.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:53.80

@@ -1,0 +1,692 @@
+\documentclass{ORSC}
+\usepackage{float}
+%\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{color}
+%\usepackage{flushend}
+%\usepackage{multirow}
+%\usepackage{amsmath}
+\usepackage{listings}
+%\usepackage{subfigure}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{chinesetitle}
+
+\title{基于CUDA的并行最短路径算法}{}
+
+\author{陈凯}{Email: remlostime@gmail.com}
+\address{计算机科学与技术学院，复旦大学}
+
+\maketitle
+
+\begin{abstract}
+本文提出了4种CUDA实现的并行最短路径算法。它们分别基于Dijkstra、Bellman-Ford、
+$\Delta$-Stepping、Sparse Matrix-Vector Bellman-Ford。本文首先对于经典的Dijkstra和Bellman-Ford分别进行了并行化的改进，
+之后对当前性能最佳的$\Delta$-Stepping并行算法实现了CUDA平台的改进版本，最后提出了基于Sparse Matrix-Vector的Bellman-Ford，
+分别实现了CSR和ELL版本的CUDA算法。在实验部分，CUDA算法与当前性能最优的Boost库中的各种最短路径算法进行了比较，证明了本文的算法
+在时间和空间上都有较强的竞争力，且在大数据上性能优势更明显。
+\keywords{最短路径，Dijkstra，Bellman-Ford, $\Delta$-Stepping，Sparse Matrix-Vector, CSR Bellman-Ford,
+ELL Bellman-Ford, CUDA，GPU，并行编程}
+\end{abstract}
+
+\end{chinesetitle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{简介}
+近年来，并行计算的革命迅速发展。NVIDIA、Microsoft、Intel等一些公司都分别推出了自己的
+并行计算平台。在2011年，几乎所有的计算机——从上网本、笔记本、台式机、到工作站计算机都采用了多核处理器。
+最近智能手机也成为了多核处理器新的竞争战场。例如，NVIDIA在2010年推出针对移动平台的Tegra 2双核处理器等等。
+
+与传统的中央处理器的数据处理流水线相比，图形处理器（GPU）的并行计算在最近几年成为了一个新概念。
+早期的GPU编程极为繁琐，程序只能以颜色值和纹理单元等形式作为输入数据，另外程序的写入内存方式
+有着严格的限制。而且GPU无法处理浮点数据。调试也极为繁琐。程序员还需学习OpenGL或者DirectX。因此，
+早期GPU计算并未流行。
+
+在2006年，NVIDIA公布了第一款基于CUDA架构（Compute Unified Device Architecture）
+的GPU——GeForce 8800 GTX。CUDA架构为GPU计算设计了一种全新的模块，使其能在通用计算中更为方便。
+该架构使GPU能够解决复杂的计算问题，它包含了CUDA指令集架构（ISA）以及GPU内部的并行计算引擎。 开发人员现在可以使用C/C++语言来为CUDA架构编写程序，并可以在支持CUDA的处理器上以超高性能运行。
+
+自2007年以来，以CUDA C为基础的应用程序，获得了计算速度上的极大提升。例如：医学图像、计算流体动力学、
+环境科学等一些领域都可以通过GPU并行计算得到性能上的提升。本文对于最短路径问题，提出了基于CUDA平台的并行算法，
+相对于串行算法，在速度上得到了进一步的提升。
+
+本文余下部分的组织如下。第2章总结了过去关于最短路径的工作，同时比较了各种算法的优劣。第3章介绍了基于Dijkstra算法的CUDA版本。
+第4章介绍了Bellman-Ford的CUDA并行算法。在第5章中，描述了$\Delta$-Stepping算法的CUDA改进版本。第6章提出了基于Sparse Matrix-Vector的Bellman-Ford并行算法。在最后的实验部分，比较了上述4种并行算法和Boost库中的串行和并行最短路径算法的性能。
+
+\section{相关工作}
+给出一个有向图$G=(V,E)$，其中$|V|=n$，$|E|=m$。让$s \in V$代表源节点。每条边$e \in E$被赋予一个
+非负的权重，用权重函数表示为$c:E \to \mathbb{R}$。在这里，我们定义一条路径的权重为路径中所有边的权重之和。
+对于单源点最短路径问题就是计算从源点$s$到目标节点$v$的权重最小的一条路径。
+
+大多数的最短路径算法维护一个当前到$s$的最短路径数组$d$，$d(v)$代表从$s$到$v$的权重，并且算法每次都进行松弛操作（relax）更新$d$。
+算法开始时，$d(s) \gets 0$, $d(v) \gets \infty$。每次松弛一条边$e(v,w) \in E$，把$d(w)$设置为$d(w)$和$d(v)+c(v,w)$
+中较小的值，直到没有节点需要更新，算法结束。如果$s$到$v$不可达，则算法结束时$d(v)=\infty$。基于$d$的更新方式，
+大多数的最短路径算法可分为两种：label-setting和label-correcting。Label-setting算法（例如：Dijkstra）每次只对最短路径已经确定的
+节点$v$的相关边进行松弛，所以Label-setting只需松弛$m$条边。而Label-correcting算法（例如：Bellman-Ford）每次对于未确定最
+短路径的节点$v$同样会进行松弛，所以整个过程可能松弛超过$m$条边。
+
+Cherkassky~\cite{paper:shortest-survey}总结了当前的各种最短路径算法。
+其中，最经典的一些单源点最短路径算法包括：Dijkstra~\cite{web:dijkstra, CLRS, paper:dijkstra}、
+Bellman-Ford~\cite{web:bellman, CLRS, paper:bellman}、以及基于启发式函数的$A^{\star}$~\cite{web:astar, AI, web:astar-stanford}等等。而基于这些经典算法的改进也颇多。例如：对于Dijkstra的改进包括了基于Min-Max Heap~\cite{paper:min-max}、
+Pairing Heap~\cite{paper:pairing-heap}、Fibonacci Heap~\cite{paper:fibonacci}的算法。一般来说这些算法提取优先队列（$Q$）
+中到$s$的路径最短的节点$v$的时间复杂度为$O(logn)$，于是算法的整体时间复杂度降为$O(nlogn+m)$。另外，~\cite{paper:heuristic-bellman}和
+~\cite{paper:bellman-improved}分别对Bellman-Ford提出了改进算法。由于$A^{\star}$算法本质上是Dijkstra的泛化版本，
+当$h(x)=0$(启发式函数：$h(x) \leq d(x,y)+h(y)$)时，$A^{\star}$就演化为Dijkstra算法了。$A^{\star}$的应用
+也很广泛，例如：游戏中的寻路算法，国际象棋的博弈树等等。$A^{\star}$算法的关键在于启发式函数$h(x)$的设计。但在本问题中，除了节点
+间的权重之外，没有更多额外的信息，启发式函数较难设计，所以$A^{\star}$不太适合我们的问题。
+
+近些年，最短路径的并行算法，例如Crauser ~\cite{paper:crauser}、Eager~\cite{paper:eager}、
+$\Delta$-Stepping~\cite{paper:delta-stepping}也被一一提出。
+其中，Crauser性能比较稳定，但需要维护3个优先队列，对空间要求较大，同时对于每个节点的维护工作也较重。
+Eager则需要输入一个lookahead参数，用来每次寻找距离在lookahead内的节点。当lookahead太小会限制算法的并行性，
+太大则遍历次数会加大并且做许多额外的工作。对于lookahead的选择则是因图而异。所以Eager的算法效率依赖于lookahead
+的选择，并不稳定。$\Delta$-Stepping是并行最短路径算法中效率最高的。它根据参数$\Delta$，
+在算法的第$i$次松弛操作时，寻找$d$权重在$i \times \Delta$和$(i+1) \times \Delta$之间的节点松弛。
+~\cite{paper:delta-stepping-madduri}和~\cite{paper:delta-stepping-gpu, web:delta-stepping-gpu-code}各自
+都对$\Delta$-Stepping算法进行了实现。但前者是基于$9th$ DIMACS的Cray MTA-2大型机做了特别优化的代码，无法在普通的个人计算机上运行。
+后者是基于CUDA的并行算法实现，由于作者的算法基于网格图（Grid Graph），只适用于图像分割的最短路径应用，无法对一般的有向图进行运算。
+
+\section{CUDA Dijktra}
+\subsection{Dijkstra算法}
+Dijkstra~\cite{paper:dijkstra}的基本思想是维护一个节点队列$Q$，每次从$Q$中取出当前到源节点$s$路径最短的节点$u$，
+并对$u$的相关边进行松弛。初始时$d(s) \gets 0$，$d(v) \gets \infty$，其中$v \neq s$。
+算法至多执行$n-1$轮松弛操作就可以找出所有节点$v$到$s$的最短路径，时间复杂度$O(n^2)$。
+
+\begin{algorithm}[htbp]
+\caption{CUDA Dijkstra}
+\label{alg:dijkstra}
+\begin{algorithmic}
+\STATE {\bf (a) Initial:}
+\STATE {\bf foreach $v \in V$} {\bf do}
+\STATE \qquad          $d[v] \gets \infty$
+\STATE {\bf end}
+\STATE      $d[s] \gets 0$
+\STATE      $Q \gets V$
+
+\STATE      {\bf while} $Q \neq \phi$ {\bf do}
+\STATE \qquad          {\bf (b) ExtractMin:}
+\STATE \qquad          $u \gets \{v: v \in Q \land \forall w \in Q, d(v) \leq d(w) \}$
+\STATE \qquad          {\bf if} $d[u] = \infty$ {\bf then}
+\STATE \qquad \qquad              {\bf break}
+\STATE \qquad          remove $u$ from $Q$
+\STATE \qquad          {\bf (c) Relax:}
+\STATE \qquad          {\bf foreach} $(u,v) \in E$ {\bf do}
+\STATE \qquad \qquad            {\bf if} $d[u] + c(u,v) < d[v]$ {\bf then}
+\STATE \qquad \qquad \qquad                  $d[v] \gets d[u] + c(u,v)$
+\STATE \qquad          {\bf end}
+\STATE      {\bf end}
+\end{algorithmic}
+\end{algorithm}
+
+Algorithm\ref{alg:dijkstra}给出了CUDA Dijkstra的算法框架。其中，Initial、ExtractMin、
+Relax都能并行执行。Initial的时间复杂度为$O(n/t)$，
+ExtractMin为$O(n^2/t)$，而Relax为$O(m/t)$，其中$t$表示核函数中线程(thread)总数。
+所以整个算法的时间复杂度为$O(n/t + n^2/t + m/t) = O(n^2/t)$。
+
+\subsection{Reduction}
+在并行编程中，Reduction~\cite{CUDA-by-example,web:reduction}是许多并行操作的基石。
+对于ExtractMin，我们同样可以用Reduction来加速。Reduction的基本思想是将大量的数据以
+分治的方法处理，每次减小为原规模的一半，最后当符合结束条件时算法结束。理论上，当$t \geq n$时，ExtractMin
+的时间复杂度为$O(logn)$，但由于数据间的通信和同步等问题，实际的运算要慢些。
+
+在串行的Dijkstra算法中ExtractMin需要遍历数组一次，时间复杂度为$O(n)$。对于Dijkstra的一些$O(logn)$的改进算法
+~\cite{paper:min-max, paper:pairing-heap, paper:fibonacci}都是基于优先队列实现ExtractMin操作，
+而优先队列的数据结构并不适合并行算法，所以我采用了Reduction的方法实现ExtractMin。优点在于：编程容易，
+对于Dijkstra的原始算法和数据结构稍作改进即可。同时维护成本低，不需要额外的空间进行优先队列的存储。
+提取的时间复杂度也能控制在$O(logn)$。
+
+在~\cite{web:reduction}中介绍了7种Reduction的方法，对Reduction渐进地进行了各种不同的优化。我选择了最好的一种，
+并对不同的ThreadsPerBlock(TPB)参数进行性能比较。同时采用了Thrust库~\cite{web:thrust}中的Reduction、CPU的Loop和
+Heap操作进行比较。从图\ref{table:reduction_loop_heap}可以看出，在数据规模为$10^7$时，256、512、1024TPB都比Loop(-O2优化)
+快，最快的512TPB加速比为1.65。而Thrust的加速比更是达到6.07。未经优化的Loop耗时甚至有56790ns之多。
+但Reduction相对于Heap还是要慢，这是由于线程间的通信，数据传输的延迟等问题造成。可以观察到，当数据规模较小时，
+Loop占优势，而数据规模变大时Reduction更占优势，所以并行编程更适合大数据。
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ccccccccc}
+  \hline
+              & 1 & 10 & $10^2$ & $10^3$ & $10^4$ & $10^5$ & $10^6$ & $10^7$\\
+  \hline
+    128(TPB) & 40.82 & 35.92 & 39.63 & 43.12 & 59.4 & 145.4 & 1033.26 & 8033.73\\
+    256(TPB) & 48.56 & 57.37 & 43.96 & 43.05 & 50.49 & 112.43 & 556.43 & 4839.28\\
+    512(TPB) & 42.64 & 47.32 & 41.2 & 41.55 & 45.97 & 92.04 & 470.487 & 4075.55\\
+    1024(TPB) & 43.81 & 43.76 & 45.52 & 49.77 & 46.74 & 108.75 & 734.59 & 6475.09\\
+    Thrust & 324.8 & 65.97 & 73.04 & 513.12 & 453.91 & 450.91 & 498.5 & 1105.1\\
+    Loop & 0 & 0 & 0 & 0 & 150 & 630 & 5620 & 56790\\
+    Loop(-O2) & 0 & 0 & 0 & 0 & 0 & 0 & 630 & 6710\\
+    Heap & 0 & 0 & 0 & 0 & 0 & 0 & 0.124 & 0.1311\\
+  \hline
+\end{tabular}
+\caption{ExtractMin Time(ns)。数据规模从1到$10^7$，进行1000次ExtractMin操作取平均值。}
+\label{table:reduction_loop_heap}
+\end{table}
+
+\section{CUDA Bellman-Ford}
+\subsection{Bellman-Ford算法}
+Bellman-Ford算法不同于Dijkstra，它的核心思想是对图中每条边的对应节点都进行松弛，直到没有节点需要更新，属于
+label-correcting算法。同时可以证明至多松弛$n-1$轮算法结束，时间复杂度为$O(nm)$。
+
+\begin{algorithm}[htbp]
+\caption{CUDA Bellman-Ford}
+\label{alg:bellman-ford}
+\begin{algorithmic}
+\STATE {\bf (a) Initial:}
+\STATE   {\bf foreach} $v \in V$ {\bf do}
+\STATE \qquad $d[v] \gets \infty$
+\STATE {\bf end}
+\STATE  $d[s] \gets 0$
+
+\STATE  {\bf for} $i \gets 1$ {\bf to} $|V|-1$ {\bf do}
+\STATE \qquad {\bf (b) Relax:}
+\STATE \qquad {\bf foreach} $(u,v) \in E$ {\bf do}
+\STATE \qquad \qquad           {\bf if} $d[u] + c(u,v) < d[v]$ {\bf then}
+\STATE \qquad \qquad \qquad               $d[v] \gets d[u] + c(u,v)$
+\STATE \qquad {\bf end}
+\STATE {\bf end}
+\end{algorithmic}
+\end{algorithm}
+
+Algorithm\ref{alg:bellman-ford}给出了算法的大致框架，Initial和Relax部分与Dijkstra大致相同。
+同时，我在算法中采用了一种对Bellman-Ford的常用改进：
+用队列保存每次被更新的节点。在下一次的Relax过程中提取队列的首节点，并对其相关边进行松弛，
+直到队列为空。一般来说小于$n-1$轮算法就能结束，所以算法的时间复杂度稍小于$O(nm)$。
+算法对于边的松弛的复杂度为$O(m/t)$，所以并行Bellman-Ford算法的复杂度为$O(n*(m/t))=O(nm/t)$。
+
+\subsection{循环队列}
+Bellman-Ford的一个经典实现是利用队列保存需要松弛的节点。这种队列的实现一般会比原算法快一些，
+当被松弛的节点数小于$n$时，图的松弛工作就已经结束了。GPU中的队列需要满足以下几点：
+1）快速插入、提取元素。时间复杂度控制在$O(1)$。2）GPU队列中的元素能快速复制回CPU中进行操作。
+
+基于以上两点，我使用了循环队列，并且将此队列放入零拷贝内存中。这样既保证了GPU在$O(1)$的时间插入，同时CPU也能
+在$O(1)$的时间提取。循环队列的数据结构是一个长度为$n$的数组。其中设有头指针$head$和尾指针$tail$。$tail$所指向的是一个类似哨兵的节点，不
+存放数据，所以队列中最多存放$n-1$个数据。当$head=tail$时，队列为空。由于数组长度为n，所以每次更新指针$p$的操作为：
+$p \gets (p + 1) \bmod n$。循环队列能很好地利用以前节点废弃的空间给新节点使用。这样队列对于空间的要求较小，
+而且循环队列的编程复杂度较小，对插入、删除操作均能在$O(1)$完成，很适合GPU中的队列实现。在本文中，还对
+GPU队列进一步进行了改进。由于并行算法线程众多，对于单个队列的操作会产生许多通信、同步等问题，势必降低效率。
+所以，算法将队列实现为二维数组，每个$Block$对应一个队列，进一步提升了算法效率。
+
+\subsection{Large Label Last和Small Label First优化}
+~\cite{paper:lll-slf}提出了对于Bellman-Ford的Large Label Last(LLL)和Small Label First(SLF)的优化。
+LLL：设队首元素为$1$，队尾元素$n$，$d_{avg} = \frac{1}{n}\sum_{v = 1}^{n}d(v)$。若$dist(i)>d_{avg}$则
+将$i$插入到队尾，查找下一元素，直到找到某个$i$使得$d(i) \leq x$，则将$i$ 取出队列进行松弛操作。
+SLF：设要加入的节点是$j$，队首元素为$i$，若$d(j)<d(i)$，则将$j$插入队首，否则插入队尾。
+SLF 可使速度提高15\%到20\%，SLF + LLL 可提高约50\%。
+
+\section{CUDA $\Delta$-Stepping}
+\subsection{$\Delta$-Stepping算法}
+$\Delta$-Stepping~\cite{paper:delta-stepping}主要基于Dijkstra进行了并行改进。
+与串行Dijkstra不同的是，在第$i$轮算法寻找$d(v)$在$i \times \Delta$和$(i+1) \times \Delta$之间的$v$进行
+松弛。$\Delta$-Stepping用$Bucket[i]$来保存第$i$轮算法需要松弛的节点，当$Bucket=\phi$时算法结束。由于松弛次数
+的不确定性，所以$\Delta$-Stepping属于Label-correcting算法。$\Delta$决定了每次$Bucket$集合的大小，所以
+$\Delta$的选择也成为了算法并行度和每次松弛效率的影响因子之一，在后面我们会进一步对$\Delta$进行讨论。
+
+\begin{algorithm}[htbp]
+\caption{CUDA $\Delta$-Stepping}
+\label{alg:delta-stepping}
+\begin{algorithmic}
+\STATE    {\bf (a) Initial:}
+\STATE    {\bf foreach} $v \in V$ {\bf do}\\
+\STATE \qquad        $heavy(v) \gets \{ (v,w) \in E : c(v,w) > \Delta \}$\\
+\STATE \qquad       $light(v) \gets \{ (v,w) \in E : c(v,w) \leq \Delta \}$\\
+\STATE \qquad        $d(v) \gets \infty$\\
+\STATE {\bf end}
+
+\STATE    relax($s,0$)\\
+\STATE    $i \gets 0$\\
+
+\STATE     {\bf while} $B \neq \phi$ {\bf do}\\
+\STATE \qquad        $S \gets \phi$\\
+\STATE \qquad       {\bf while} $B[i] \neq \phi$ {\bf do}\\
+\STATE \qquad \qquad            {\bf (b1) Add To Request:}
+\STATE \qquad \qquad            $Req \gets \{ (w, d(v) + c(v,w)): v \in B[i] \land (v,w) \in light(v) \}$\\
+\STATE \qquad \qquad           $S \gets S \cup B[i]$\\
+\STATE \qquad \qquad           $B[i] \gets \phi$\\
+\STATE \qquad \qquad           {\bf (c1) Relax:}
+\STATE \qquad \qquad           {\bf foreach} $(v,x) \in Req$ {\bf do}\\
+\STATE \qquad \qquad \qquad                relax($v,w$)\\
+\STATE \qquad \qquad            {\bf end}
+\STATE \qquad        {\bf end}\\
+\STATE \qquad        {\bf (b2) Add To Request:}
+\STATE \qquad        $Req \gets \{ (w, d(v) + c(v,w)) : v \in S \land (v,w) \in heavy(v) \}$\\
+\STATE \qquad        {\bf (c2) Relax:}
+\STATE \qquad        {\bf foreach} $(v,x) \in Req$ {\bf do}\\
+\STATE \qquad \qquad            relax($v,x$)\\
+\STATE \qquad       {\bf end}
+\STATE \qquad        $i \gets i + 1$\\
+\STATE    {\bf end}\\
+
+\STATE    {\bf Procedure} relax($v,x$)\\
+\STATE \qquad        {\bf if} $x < d(v)$ {\bf then}\\
+\STATE \qquad \qquad            $B[\lfloor d(v)/\Delta \rfloor] \gets B[\lfloor d(v)/\Delta \rfloor] \ {v}$\\
+\STATE \qquad \qquad            $B[\lfloor x/\Delta \rfloor] \gets B[\lfloor x/\Delta \rfloor] \cup {v}$\\
+\STATE \qquad \qquad            $d(v) \gets x$\\
+\end{algorithmic}
+\end{algorithm}
+
+Algorithm\ref{alg:delta-stepping}给出了CUDA $\Delta$-Stepping的算法框架，算法中的Initial、
+Add To Request、Relax都可以并行执行。
+
+\subsection{Initial}
+$E$中的每条边都是独立的，所以对于边的初始化可以并行执行，$heavy(v)$和$light(v)$的初始化在
+大约$O(m/t)$的时间内完成。在本文的算法中，由于内存、显存限制以及编程便利性等原因，Initial的实现是在之后的
+Relax中一并实现的，在函数中即时判断$c(v,w) > \Delta$或$c(v,w) \leq \Delta$来确定对应边的类型。当图非常大时，
+可以省去对于$light$和$heavy$所占用的大量的内存空间，同时由于$heavy$和$light$在初始化时不可避免地产生线程间通信、同步
+等问题都可以一并地省去。而在$relax$中每个线程对$c(v,w)$的判断所增加的时间很小，所以算法的整体速度不会降低。
+
+\subsection{Add To Request}
+根据原算法，$Req$保存$(v,x)$点对，其中$v$代表需要被更新的节点，$x$是更新的距离。但由于$Req$的长度是不确定的，最短为0，最长为$m$。
+如果在程序的最初分配一块约$2 \times m$大小（$v$和$x$）的内存给$Req$，相当于整个图的大小，开销过大。
+另外，$Req$的线性结构同样对于其增长的速度是一个瓶颈，需要维护一个$size$变量来保存$Req$的长度，同一时间只有一个线程能进行更新，
+并行度很低。同时，线程间的通信、同步等问题也是时间瓶颈之一。
+
+于是，我想到了用$Req$保存父节点的方法，即保存待更新节点$w$的前向节点$v$。在之后的$Relax$中进行相应的修改即可。
+这样做的好处有三个：第一，节省空间。相比之前最大有$2 \times m$的空间要求，算法最多只需要$n$的空间
+（即最大节点数目）。第二，降低算法复杂度。对于$Req$的增加只需判断$v$是否属于$B[i]$就可加入，其余的实现由
+$Relax$完成。最后，也非常重要的，我用基于Reduction的prefix sum~\cite{web:prefix-sum}的方法计算出$ReqIndex$，
+得到了对应节点在$Req$中存放的位置，对$Req$的更新可以并行执行，由此解决了通信、同步的问题，提高了并行效率。
+
+\subsection{Relax}
+首先，对于每个线程$tid$根据$reqSize$找到在$Req$中对应的节点位置和对应的需更新节点数量。$reqSize$类似于之后提到的
+Compressed Sparse Row中的$C_p$索引数组。$reqSize[i]$记录前$i-1$个节点的链表总长。
+在更新时进行$c(v,w)$的判断来确定$heavy$或$light$边，以进行相应的
+$heavy$或$light$阶段的更新。$light$阶段的时间复杂度是$O(l/t)$，$heavy$为
+$O(h/t)$，其中$l$和$h$分别是$light$和$heavy$更新时边的数量，$t$为线程总数。
+
+\subsection{Bucket的数据结构}
+在算法中，另一个关键点是$B[i]$的数据结构。算法中，Bucket为集合类型。这样的结构很适用于C++ STL中的set类，
+但对于CUDA编程则并不合适。我们在relax时希望对Bucket进行$O(1)$时间的插入、删除工作。由于CUDA本身不提供set类型，所以
+设计这样一个数据结构将是非常大的挑战，而且内存、时间、通信等问题都可能成为瓶颈。基于这些问题，我对原算法进行了一些改进以适用于CUDA编程。
+仔细观察$B[i]$可以发现，每个节点$v$在同一时间只能唯一属于一个Bucket，不存在两个$B[i]$和$B[j]$同时包含$v$的情况，其中$i \neq j$。
+另外在主循环中对于$B \neq \phi$和$B[i] \neq \phi$的判断也是设计Bucket时需要考虑的问题。
+在我的算法中，设计了一个$BIndex(v)$的数据用来保存$v$所属的Bucket索引号。这样做的好处有两个：第一，节省内存。
+$BIndex$只需要一个$n$维空间的数组即可，相对于原算法的$B[i]$的集合类型所占用的空间（最大到$max(p)/\Delta$。其中，
+$p \in P$，$P$代表所有可能的路径）节省了许多。第二，操作方便。对于集合$B[i]$的各种操作的设计都将是非常复杂的，
+且可能无法保证在$O(1)$时间内完成。而对于$BIndex(v)$的查找、插入、删除以及之后与$S$的合并操作均能保证$O(1)$。
+
+\subsection{$\Delta$的选择}
+$\Delta$可以有三种选择：1)$\Delta=MEDIAN(c(e))$，2)$\Delta=\frac{1}{n}\sum_{e \in E}c(e)$，
+3)$\Delta=max\{c(e):e \in E\} / max\{d: d \in Degree\}$。同时，
+Meyer~\cite{paper:delta-stepping}证明re-insertion的总数限制在$|P_{\Delta}|$，re-relaxation的总数
+限制在$|P_{2\Delta}|$。其中，$|P_\Delta|$代表代表路径长度最大为$\Delta$的集合。对于任何的$\Delta$，phases
+的数量被限定在$d_c/\Delta l_{max}$，其中$d_c=max\{d(v):d(v) < \infty\}$。所以，$\Delta=O(1/d)$是效率和并行度平衡的一个选择。
+在本文中，选择了方案3，$\Delta=max\{c(e):e \in E\} / max\{d: d \in Degree\}$，即最大权重边除以最大的节点出度的商。
+
+
+\section{CUDA Sparse Matrix-Vector Bellman-Ford}
+\subsection{Sparse Matrix-Vector简介}
+Bell~\cite{paper:bell}提出了基于CUDA的Sparse Matrix-Vector的运算，对于稀疏矩阵的表示包括：
+Diagonal Format(DIA)、ELLPACK Format(ELL)、Compressed Sparse Row Format(CSR)、Coordinate Format(COO)、
+Hybrid Format、Packet Format(PKT)。
+
+受~\cite{paper:sparse-matrix}的启发，稀疏矩阵的运算稍加变换同样可以用于解决最短路径的问题。
+对于经典的Dijkstra算法，由于优先队列的数据结构并不适合矩阵运算。而Bellman-Ford则很适合将松弛函数改写为矩阵运算：
+\begin{eqnarray*}
+d_i \gets \min_{j \in N_i}(d_j + c_{ij})
+\end{eqnarray*}
+稀疏矩阵$c_{ij}$表示$v_j$到$v_i$的权重。当没有$d_i$需要更新时，算法结束。最坏的情况需要$O(n)$次迭代，
+但在实际中迭代的次数要远少于$O(n)$。
+
+从表\ref{table:gr}可以观察到$E/V$非常小，平均每个节点只有2.5个左右相连的节点。在~\cite{paper:bell}中提到
+对于$E/V$很小的图，DIA的效率最佳。而DIA的大小与图中对角线的数量成正比，$D_{num}$的数量远远超过了内存的承受，
+所以在本文中并没有采用DIA的数据结构，而是采用了比较常用的CSR和ELL数据结构的Bellman-Ford算法。
+
+\subsection{CSR Bellman-Ford算法}
+Compressed Sparse Row(CSR)是对于稀疏矩阵最常见的表示方法。图\ref{fig:csr_a}是有向图的邻接矩阵$C$，图\ref{fig:csr_b}中
+$C_v$按行的顺序记录了$C$的非0元素，$C_j$记录了$C_v$相应元素的列索引。最后，$n+1$维的$C_p$数组记录了非0元素的数量，即$C_p[i]$
+记录前$i-1$行非0元素总数。
+
+\begin{figure}[htbp]
+\begin{minipage}[htbp]{0.3\linewidth}
+\centering
+\includegraphics[width=\textwidth]{csr_a}
+\caption{有向图邻接矩阵$C$ \label{fig:csr_a}}
+\end{minipage}
+\hfill
+\begin{minipage}[htbp]{0.5\linewidth}
+\centering
+\includegraphics[width=\textwidth]{csr_b}
+\caption{邻接矩阵$C$的CSR表示 \label{fig:csr_b}}
+\end{minipage}
+\label{fig:csr}
+\end{figure}
+
+对于CSR形式的Bellman-Ford矩阵运算有两个版本：Listing\ref{lst:relax_csr_scalar}中每个线程更新一行，而Listing\ref{lst:relax_csr_vector}
+是以一组warp(32)为单位对一行进行更新。所以当$E/V < 32$时，Listing\ref{lst:relax_csr_scalar}效率更高，而$E/V \geq 32$，
+Listing\ref{lst:relax_csr_vector}更好。
+
+\lstinputlisting[float,language=C++,keywordstyle=\color{blue!70},breaklines,caption={CSR Scalar Bellman-Ford Relax},
+label=lst:relax_csr_scalar,morekeywords={__global__,threadIdx,blockIdx,blockDim,gridDim},basicstyle=\small,frame=lines,tabsize=4]{relax_csr_scalar.cu}
+
+\lstinputlisting[float,language=C++,keywordstyle=\color{blue!70},breaklines,caption={CSR Vector Bellman-Ford Relax},
+label=lst:relax_csr_vector,morekeywords={__global__,threadIdx,blockIdx,blockDim,gridDim},basicstyle=\small,frame=lines,tabsize=4]{relax_csr_vector.cu}
+
+\subsection{ELL Bellman-Ford算法}
+ELLPACK Format(ELL)是基于对行的非0元素的压缩进行存储的。对一个$M \times N$的矩阵，且行的非0元素最大为$K$时，
+ELL需要$M \times K$的空间。ELL对空间的需求也是较大的，比如，表\ref{table:gr}中NY的$I_{max}=8$，
+所以需要的空间为$V \times I_{max}=264346 \times 8=2114768$。
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[htbp]{0.3\linewidth}
+\centering
+\includegraphics[width=\textwidth]{ell_cv}
+\caption{存储数据向量$C_v$ \label{fig:ell_cv}}
+\end{minipage}
+\hfill
+\begin{minipage}[htbp]{0.3\linewidth}
+\centering
+\includegraphics[width=\textwidth]{ell_cj}
+\caption{列索引向量$C_j$ \label{fig:ell_cj}}
+\end{minipage}
+\end{figure}
+
+对于图\ref{fig:csr_a}的ELL表示如图\ref{fig:ell_cv}和图\ref{fig:ell_cj}。$C_v$是每行的非0元素压缩存储，$C_j$是对应$C_v$元素
+在$C$中的列索引。
+
+ELL的矩阵运算可以用Listing\ref{lst:relax_ell}实现，每个线程对应一行，每次线程更新一列。
+\lstinputlisting[float,language=C++,keywordstyle=\color{blue!70},breaklines,caption={Ell Bellman-Ford Relax},label=lst:relax_ell,morekeywords={__global__,threadIdx,blockIdx,blockDim,gridDim},basicstyle=\small,frame=lines,tabsize=4]{relax_ell.cu}
+
+\section{实验}
+\subsection{实验设置}
+测试数据来自2006年9th DIMACS~\cite{web:database}中的Distance Graph。
+如表\ref{table:gr}所示，图中的节点从NY的十万级别递增到USA的千万级别。从$E/V$可以看出平均每个节点和2.5个左右的
+节点相连，所以测试的地图十分的稀疏。表中的$O_{min}$、$O_{max}$、$I_{min}$、$I_{max}$代表节点的最小、最大出度以及
+节点的最小、最大入度。$D_{num}$代表非0对角线的个数。
+
+\begin{table}[htbp]
+\centering
+  \begin{tabular}{c|cccccccc}
+    \hline
+    $G$ &	$V$ & $E$ & $E/V$ & $O_{min}$ & $O_{max}$ & $I_{min}$ & $I_{max}$ & $D_{num}$\\
+    \hline
+    NY & 264346 & 733846 & 2.77 & 1 & 8 & 1 & 8 & 28792\\
+    BAY & 321270 & 800172 & 2.49 & 1 & 7 & 1 & 7 & 42052\\
+    COL & 435666 & 1057066 & 2.43 & 1 & 8 & 1 & 8 & 37834\\
+    FLA & 1070376 & 2712798 & 2.53 & 1 & 8 & 1 & 8 & 69434\\
+    NW & 1207945 & 2840208 & 2.35 & 1 & 9 & 1 & 9 & 483184\\
+    NE & 1524453 & 3897636 & 2.56 & 1 & 9 & 1 & 9 & 870726\\
+    CAL & 1890815 & 4657742 & 2.46 & 1 & 8 & 1 & 8 & 461930\\
+    LKS & 2758119 & 6885658 & 2.50 & 1 & 8 & 1 & 8 & 1418978\\
+    E &	3598623 & 8778114 & 2.44 & 1 & 9 & 1 & 9 & 1514518\\
+    W & 6262104 & 15248146 & 2.43 & 1 & 9 & 1 & 9 & 2217466\\
+    CTR & 14081816 & 34292496 & 2.44 & 1 & 9 & 1 & 9 & 1036394\\
+    USA & 23947347 & 58333344 & 2.44 & 1 & 9 & 1 & 9 & 3446604\\
+    \hline
+  \end{tabular}
+  \caption{Distance Graph参数统计}
+  \label{table:gr}
+\end{table}
+
+测试环境如表\ref{table:test_platform}所示。
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  CPU & Intel Core i5 760\\
+  GPU & NVIDIA GeForce GTX 550 Ti \\
+  Memory & 2 * 2GB DDR3-1333\\
+  Graphics Memory & 1GB\\
+  OS & Windows 7 Ultimate(64bit)\\
+  CUDA & CUDA 4.0\\
+  IDE & Visual Studio 2010\\
+  \hline
+\end{tabular}
+\caption{测试环境}
+\label{table:test_platform}
+\end{table}
+
+对比算法采用了当前性能最好的Boost 1.47~\cite{web:boost_dijkstra, web:boost, web:boost_bellman}，
+包括串行算法:Dijkstra($O(nlogn)$)、Bellman-Ford($O(nm)$)，并行算法:$\Delta$-Stepping($O(log^3n/loglogn)$)、
+Crauser($O(nlogn)$)。
+
+\subsection{性能分析}
+表\ref{table:time_cpu}给出了Boost库的运行时间，可以看出Dijkstra是其中速度最快的，$\Delta$-Stepping也很
+高效，速度会随CPU内核的增加而进一步提升。同时观察到，在CTR和USA这两个地图，算法的时间急速上升，这是由于这两个地图节点数量消耗内存巨大。
+在CPU Xeon E5430，8GB Memory，OS Windows Server 2003 R2 Enterprise x64 Edition的测试环境中，
+对于最大的地图USA：Bellman-Ford消耗约5.6GB内存，Dijkstra消耗约5.4GB内存，而Crauser和$\Delta$-Stepping都超过了6.5GB，
+运行失败。所以在本文的测试环境中，算法分配内存和初始化的时间会更长，并且不断与硬盘交换数据，导致算法性能急速下降。
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|cccccccccc}
+  \hline
+	 & Dijkstra & Bellman-Ford & Crauser & $\Delta$-Stepping\\
+  \hline
+NY & {\bf 0.1} & 6.708 & 0.749 & 0.141\\
+BAY & {\bf 0.125} & 8.315 & 0.936 & 0.172\\
+COL	& {\bf 0.156} & 15.19 & 1.451 & 0.234\\
+FLA & {\bf 0.359} & 61.30 & 3.338 & 0.592\\
+NW & {\bf 0.453} & 95.33 & 4.165 & 0.624\\
+NE & {\bf 0.64} & 84.63 & 5.943 & 0.905\\
+CAL & {\bf 0.734} & 183.51 & 7.113 & 1.17\\
+LKS & {\bf 1.076} & 338.25 & 11.06 & 1.607\\
+E & {\bf 1.576} & 382.83 & 16.271 & 2.496\\
+W & {\bf 2.855} & 680.86 & 30.951 & 4.758\\
+CTR & {\bf 410.14} & 4905.44 & 4304.97 & 991.56\\
+USA & {\bf 1754.54} & 8762.85 & 4530.68 & 2350.99\\
+  \hline
+\end{tabular}
+\caption{Boost Algorithms Compute Time(secs)，计算源点$V_1$到其余节点的时间。算法均开启-O2优化。}
+\label{table:time_cpu}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|cccccc}
+  \hline
+   & CuD & CuBF & CuDS & CuCBF$_{scalar}$ & CuCBF$_{vector}$ & CuEBF\\
+  \hline
+NY & 125.10 & 596.81 & 4.631 & {\bf 1.130} & 7.405 & 1.220\\
+BAY & 154.18 & 840.64 & 3.830 & {\bf 1.141} & 7.378 & 1.183\\
+COL	& 219.34 & 1648.55 & 11.04 & {\bf 2.524} & 17.31 & 2.568\\
+FLA & 670.71 & 27264.5 & 22.46 & {\bf 9.131} & 82.14 & 9.686\\
+NW & 739.67 & 时间过长 & 30.35 & {\bf 10.50} & 92.23 & 11.82\\
+NE & 1022.13 & 时间过长 & 16.59 & {\bf 9.198} & 77.66 & 9.719\\
+CAL & 1350.8 & 时间过长 & 38.41 & {\bf 20.05} & 171.28 & 20.37\\
+LKS & 2353.8 & 时间过长 & 72.77 & {\bf 44.77} & 363.51 & 45.18\\
+E & 3549.42 & 时间过长 & 58.50 & {\bf 44.24} & 351.58 & 46.71\\
+W & 8726.91 & 时间过长 & 140.55 & {\bf 66.63} & 547.63 & 72.22\\
+CTR & 时间过长 & 时间过长 & 400.75 & {\bf 372.57} & 1722.04 & 显存不足\\
+USA & 时间过长 & 时间过长 & 显存不足 & {\bf 654.35} & 4864.98 & 显存不足\\
+  \hline
+\end{tabular}
+\caption{CUDA Algorithms Compute Time(secs)，计算源点$V_1$到其余节点的时间。算法均开启-O2优化。}
+\label{table:time_gpu}
+\end{table}
+
+CUDA Dijkstra(CuD)、CUDA Bellman-Ford(CuBF)、CUDA $\Delta$-Stepping(CuDS)、CUDA CSR Bellman-Ford(CuCBF)和
+CUDA ELL Bellman-Ford(CuEBF)的运行时间如表\ref{table:time_gpu}所示，其中CuCBF$_{scalar}$最快，同时CuDS性能
+也不错，如果提供更大的显存，对于大地图的处理会更好。可以看到CuD和CuBF
+相对于CuDS、CuCBF、CuEBF的时间普遍慢很多。原因是测试数据$E/V$实在太小，每张地图的$O_{max}$最大也不超过10。
+每次，CuD和CuBF平均松弛2.5个节点，并行算法的优势被大大削弱。相对地，CuDS、CuCBF和CuEBF每次松弛更多的节点
+并行度更高，算法也更快。对于$E/V$较大的地图，CuD和CuBF的并行优势才能体现。
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|cccc}
+  \hline
+   & Dijkstra & $\Delta$-Stepping & CuDS & CuCBF$_{scalar}$\\
+  \hline
+NY & {\bf 0.1} & 0.141 & 4.631 & 1.130\\
+BAY & {\bf 0.125} & 0.172 & 3.830 & 1.141\\
+COL	& {\bf 0.156} & 0.234 & 11.04 & 2.524\\
+FLA & {\bf 0.359} & 0.592 & 22.46 & 9.131\\
+NW & {\bf 0.453} & 0.624 & 30.35 & 10.50\\
+NE & {\bf 0.64} & 0.905 & 16.59 & 9.198\\
+CAL & {\bf 0.734} & 1.17 & 38.41 & 20.05\\
+LKS & {\bf 1.076} & 1.607 & 72.77 & 44.77\\
+E & {\bf 1.576} & 2.496 & 58.50 & 44.24\\
+W & {\bf 2.855} & 4.758 & 140.55 & 66.63\\
+CTR & 410.14 & 991.56 & 400.75 & {\bf 372.57}\\
+USA & 1754.54 & 2350.99 & 显存不足 & {\bf 654.35}\\
+  \hline
+\end{tabular}
+\caption{Boost V.S. CUDA Algorithms Compute Time(secs)}
+\label{table:time_cpuvsgpu}
+\end{table}
+
+表\ref{table:time_cpuvsgpu}给出了CPU算法Dijkstra和$\Delta$-Stepping与GPU算法CuDS和CuCBF$_{scalar}$的时间对比。
+对于小规模数据，CPU算法比较占优势，而对于千万级以上的数据，GPU并行加速就很明显了。
+CTR地图：CuCBF$_{scalar}$加速比$K_{Dijkstra}=\frac{T_{Dijkstra}}{T_{CuCBF_{scalar}}}=\frac{410.14}{372.57}=1.1$，
+$K_{\Delta-Stepping}=2.66$。CuDS加速比$K_{Dijkstra}=1.02$，$K_{\Delta-Stepping}=2.47$。USA地图：CuCBF$_{scalar}$
+加速比$K_{Dijkstra}=2.68$，$K_{\Delta-Stepping}=3.59$。同时，GPU版本的算法的内存消耗相对于CPU版本要少得多，对于USA地图
+CuDS估计消耗1.4G显存，而CuCBF$_{scalar}$只需要902MB，对于数据规模越大的数据，并行算法的优势越明显。最后，由于测试
+环境的显卡配置和比赛的显卡还有一定差距，所以在更高配置的显卡上应该能得到更高的加速比。
+
+
+\section{总结}
+本文提出了4种不同的CUDA并行最短路径算法，分别基于Dijkstra、Bellman-Ford、$\Delta$-Stepping、
+Sparse Matrix-Vector Bellman-Ford。其中$\Delta$-Stepping和Sparse Matrix-Vector Bellman-Ford都取得了不错的效果，
+且相对于Boost库中的串行和并行最短路径算法在时间和空间上都具有较强的竞争力。同时由于实验数据采用的图为稀疏图，
+不能很好的体现CUDA Dijkstra和CUDA Bellman-Ford算法的并行优势，这两个算法对于稠密图应该会有更好的加速比。
+
+\Acknowledgements
+
+感谢NVIDIA公司提供的NVIDIA 2011 CUDA校园程序设计大赛平台，以及顾洁同学提供的一些插图。
+
+
+\begin{thebibliography}{99}
+
+% 网址
+%dijkstrab
+\bibitem{web:dijkstra}{\it Wiki:Dijkstra.}
+\url{http://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
+
+%boost dijkstra
+\bibitem{web:boost_dijkstra}{\it Boost:Dijkstra.}
+\url{http://www.boost.org/doc/libs/1_47_0/libs/graph/doc/dijkstra_shortest_paths.html}
+\bibitem{web:boost}{\it Boost:Parallel Shortest Path.}
+\url{http://osl.iu.edu/research/pbgl/documentation/dijkstra_shortest_paths.html}
+\bibitem{web:boost_bellman}{\it Boost Bellman-Ford.}
+\url{http://www.boost.org/doc/libs/1_47_0/libs/graph/doc/bellman_ford_shortest.html}
+
+%bellman-ford:
+\bibitem{web:bellman}{\it Wiki:Bellman Ford.}
+\url{http://en.wikipedia.org/wiki/Bellman-Ford_algorithm}
+
+%astar
+\bibitem{web:astar}{\it Wiki:Astar.}
+\url{http://en.wikipedia.org/wiki/A-star_algorithm}
+\bibitem{web:astar-stanford}{\it Amit:Astar.}
+\url{http://theory.stanford.edu/~amitp/GameProgramming/}
+
+%code
+\bibitem{web:delta-stepping-gpu-code}{\it GPU $\Delta$-Stepping Dijkstra.}
+\url{http://code.google.com/p/gpuwire/downloads/detail?name=gpuwire.zip&can=2&q=}
+
+%database:
+\bibitem{web:database}{\it 9th DIMACS Implementation Challenge - Shortest Paths.}
+\url{http://www.dis.uniroma1.it/~challenge9/download.shtml}
+
+%Reduction
+\bibitem{web:reduction}{\it Optimizing Parallel Reduction in CUDA}
+\url{http://developer.download.nvidia.com/compute/cuda/1_1/Website/projects/reduction/doc/reduction.pdf}
+
+%Thrust
+\bibitem{web:thrust}{\it Thrust}
+\url{http://code.google.com/p/thrust/}
+
+prefix sum
+\bibitem{web:prefix-sum}{\it Prefix Sum}
+\url{http://developer.download.nvidia.com/compute/cuda/1_1/Website/projects/scan/doc/scan.pdf}
+
+
+% 书籍
+\bibitem{CUDA-by-example}Jason Sanders, Edward Kandrot. {\it An Introduction to General-Purpose
+GPU Programming}, Addison-Wesley Professional, 2010. ISBN 9780131387683.
+
+\bibitem{CLRS} Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+{\it Introduction to Algorithms}, Second Edition. MIT Press and McGraw-Hill, 2001. ISBN 0-262-03293-7.
+
+\bibitem{AI}Russell, S. J.; Norvig, P. (2003). {\it Artificial Intelligence: A Modern Approach.}
+Upper Saddle River, N.J.: Prentice Hall. pp. 97–104. ISBN 0-13-790395-2
+
+%Nivida
+\bibitem{book}NVIDIA Corporation. {\it NVIDIA CUDA C Programming Guide}, June 2011. Version 4.0.
+
+% 英文学术期刊中的文章
+\bibitem{paper:delta-stepping}Ulrich Meyer, Peter Sanders. $\Delta$-Stepping: A Parallel
+Single Source Shortest Path Algorithm. {\it In Proceedings of ESA'1998}. pp.393-404
+
+\bibitem{paper:min-max}M. D. Atkinson, J.-R. Sack, N. Santoro, and
+T. Strothotte. Min-max heaps and generalized priority queues.
+{\it Commun. ACM}, 29:996–1000, October 1986.
+
+\bibitem{paper:dijkstra}E. W. Dijkstra. A note on two problems in connexion
+with graphs. {\it Numerische Mathematik}, 1:269–271, 1959.10.1007/BF01386390.
+
+\bibitem{paper:pairing-heap}M. Fredman, R. Sedgewick, D. Sleator, and R. Tarjan.
+The pairing heap: A new form of self-adjusting heap. {\it Algorithmica}, 1:111–129, 1986. 10.1007/BF01840439.
+
+\bibitem{paper:fibonacci}M. L. Fredman and R. E. Tarjan. Fibonacci heaps and
+their uses in improved network optimization algorithms. {\it J. ACM}, 34:596–615, July 1987.
+
+\bibitem{paper:sparse}M. Garland. Sparse matrix computations on manycore
+gpu’s. {\it In Proceedings of the 45th annual Design Automation Conference},
+DAC ’08, pages 2–6, New York, NY, USA, 2008. ACM.
+
+\bibitem{paper:bellman}Bellman, Richard (1958), "On a routing problem",
+{\it Quarterly of Applied Mathematics} 16: 87–90
+
+
+%improved-bellman-ford:
+\bibitem{paper:heuristic-bellman} A.V.Goldberg, T.Radzik. A Heuristic Improvement of the Bellman-Ford
+Algorithm. {\it Applied Math. Let.} 6:3-6,1993.
+
+\bibitem{paper:bellman-improved} Yen, Jin Y. (1970), "An algorithm for finding shortest routes from all
+source nodes to a given destination in general networks", {\it Quarterly of Applied Mathematics} 27: 526–530
+
+\bibitem{paper:lll-slf}D. Bertsekas, F. Guerriero, and R. Musmanno. Parallel asynchronous label-correcting
+methods for shortest paths. {\it Journal of Optimization Theory and Applications}, 88:297–320, 1996.
+10.1007/BF02192173.
+
+%gpu delta-stepping:
+\bibitem{paper:delta-stepping-gpu}D. L. Baggio. Gpu based image segmentation livewire algorithm
+implementation. Master’s thesis, {\it Technological Institute of Aeronautics}, Sao Jose dos Campos, 2007.
+
+%boost
+\bibitem{paper:boost-shortest}N. Edmonds, A. Breuer, D. Gregor, and A. Lumsdaine,
+Single-Source Shortest Paths with the Parallel Boost Graph Library. {\it 9th DIMACS
+Implementation Challenge: The Shortest Path Problem}, November 2006.
+
+%delta-stepping madduri
+\bibitem{paper:delta-stepping-madduri}K. Madduri, D. Bader, J. Berry,
+J. Crobak. Parallel shortest path algorithms for solving large-scale instances. {\it 9th DIMACS Implementation Challenge: The Shortest Path Problem}, November 2006.
+
+%crauser dijkstra
+\bibitem{paper:crauser}Andreas Crauser, Kurt Mehlhorn, Ulrich Meyer, Peter Sanders. A Parallelization of
+Dijkstra's Shortest Path Algorithm, {\it In Mathematical Foundations of Computer Science}, volume 1450
+of Lecture Notes in Computer Science, 722-731, 1998. Springer.
+
+%eager dijkstra
+\bibitem{paper:eager}Andreas Crauser, Kurt Mehlhorn, Ulrich Meyer, Peter Sanders. Parallelizing Dijkstra's
+shortest path algorithm. Technical report, {\it MPI-Informatik}, 1998.
+
+%shortest path survey
+\bibitem{paper:shortest-survey}B. Cherkassky, A. V. Goldberg,
+and T. Radzik. Shortest paths algorithms:
+{\it Theory and experimental evaluation. Mathematical Programming}, 73:129–174, 1993.
+
+\bibitem{paper:sparse-matrix}M. Garland. Sparse matrix computations on manycore
+gpu’s. {\it In Proceedings of the 45th annual Design Automation Conference}, DAC 08, pages 2–6, New
+York, NY, USA, 2008. ACM.
+
+\bibitem{paper:bell}N. Bell and M. Garland. Implementing sparse
+matrix-vector multiplication on throughput-oriented processors.{\it In Proceedings of the Conference on High
+Performance Computing Networking, Storage and Analysis}, SC ’09, pages 18:1–18:11, New York, NY,
+USA, 2009. ACM.
+
+\end{thebibliography}
+
+
+\end{document}

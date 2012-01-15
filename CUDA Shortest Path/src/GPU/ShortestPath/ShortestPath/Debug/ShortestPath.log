@@ -1,0 +1,52 @@
+﻿生成启动时间为 2011/12/4 10:21:58。
+     1>项目“D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ShortestPath.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\ShortestPath.lastbuildstate”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\51b6f3a1d0f04498a726c87364207f0a.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\bellman_ford.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" -clean 
+         正在删除文件“Debug\bellman_ford.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\a1d21246e7964cb49327c3fee4b73f7c.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\csr_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" -clean 
+         正在删除文件“Debug\csr_bellman.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\f9c3bfa719bb4ef7a06c851516331932.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\delta_stepping.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\delta_stepping.cu" -clean 
+         正在删除文件“Debug\delta_stepping.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\f45ec921840c4afb8f6b10b1f1fff27a.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\dijkstra.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\dijkstra.cu" -clean 
+         正在删除文件“Debug\dijkstra.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\971249958a194bac8e963a5e453c4692.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\ell_bellman.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\ell_bellman.cu" -clean 
+         正在删除文件“Debug\ell_bellman.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\c18a35f0e8054e38889b73831db82ebe.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\io.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\io.cu" -clean 
+         正在删除文件“Debug\io.cu.deps”。
+       CudaClean:
+         cmd.exe /C "C:\Users\ChenKai\AppData\Local\Temp\c3ddf54138244316a37a68b0db4227bc.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" -clean
+         
+         D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /O2 /Zi  /MDd " -o "Debug\kernel.cu.obj" "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\kernel.cu" -clean 
+         正在删除文件“Debug\kernel.cu.deps”。
+       InitializeBuildStatus:
+         正在创建“Debug\ShortestPath.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\bellman_ford.cu" 
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c "D:\code\CUDA Shortest Path\src\GPU\ShortestPath\ShortestPath\csr_bellman.cu" 

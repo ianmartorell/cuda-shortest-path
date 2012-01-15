@@ -1,0 +1,226 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.31)  31 OCT 2011 18:49
+entering extended mode
+**template.tex
+(D:\EverBox\cuda\cuda最短路径作品\shortestPath\template.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for loaded.
+(D:\EverBox\cuda\cuda最短路径作品\shortestPath\ORSC.cls
+Document Class: ORSC 2010/10/18 v0.2k ORSC article document class
+("C:\Program Files\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\ctexart.cls"
+Document Class: ctexart 2010/10/17 v1.02 ctexart document class
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\opt\ctex-common-opts.def")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\opt\ctex-caption-opts.def"
+\c@CTEX@sectiondepth=\count79
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\opt\ctex-class-opts.def")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\cfg\ctexopts.cfg")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-loadclass.def"
+("C:\Program Files\CTEX\MiKTeX\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\CTEX\MiKTeX\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-common.def"
+("C:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+("C:\Program Files\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+))
+("C:\Program Files\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\engine\ctex-cjk-engine.def"
+("C:\Program Files\CTEX\MiKTeX\tex\latex\cjk\CJK.sty"
+Package: CJK 2008/12/29 4.8.2
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty"
+Package: MULEenc 2008/12/29 4.8.2
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\cjk\CJK.enc"
+File: CJK.enc 2008/12/29 4.8.2
+)
+LaTeX Info: Redefining \selectfont on input line 756.
+\CJK@indent=\box26
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.sty"
+Package: CJKpunct 2010/02/21 4.8.2-2
+\CJKpunct@cnta=\count88
+\CJKpunct@cntb=\count89
+\CJKpunct@cntc=\count90
+\CJKpunct@cntd=\count91
+\CJKpunct@cnte=\count92
+
+("C:\Program Files\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.spa"))
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\engine\ctex-cjk-common.def"
+\ccwd=\dimen103
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\fontset\ctex-cjk-winfonts.def"
+("C:\Program Files\CTEX\CTeX\tex\generic\zhmetrics\zhwinfonts.tex"
+("C:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
+Package ifpdf Info: The package is already loaded, stopped on input line 58.
+){C:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd
+}})))
+\CTEX@q=\count93
+\CTEX@r=\count94
+)
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-caption.def")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-class.def")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-article.def"))
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\def\ctex-gbk.def")
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\cfg\ctexcap.cfg"
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\cfg\ctexcap-gbk.cfg"))
+("C:\Program Files\CTEX\CTeX\tex\latex\ctex\cfg\ctex.cfg")
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen104
+))
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks16
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks17
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks18
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks25
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/11/26 v0.05c Graphics/color for pdfTeX
+\Gread@gobject=\count107
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\grfext.sty"

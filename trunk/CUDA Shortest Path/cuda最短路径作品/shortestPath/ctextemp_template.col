@@ -1,0 +1,7 @@
+ \clearpage
+ \index{陈凯}
+ \AddArticle
+   {基于\protect \hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces CUDA 的并行最短路径算法}
+   {}
+   {陈凯}
+   {ctextemp_template.pdf}
